@@ -8,6 +8,7 @@ public class HrPayrollApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(HrPayrollApplication.class, args);
+		System.out.println("hr-payroll subiu!!!");
 	}
 
 }
