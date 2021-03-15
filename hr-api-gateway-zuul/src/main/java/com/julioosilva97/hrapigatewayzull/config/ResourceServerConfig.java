@@ -19,7 +19,10 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 	private static final String[] PUBLIC = {"/hr-oauth/oauth/token"};	
 	private static final String[] OPARETOR = {"/hr-worker/**"};	
 	private static final String[] ADMIN = {"/hr-payroll/**"
-											,"/hr-user/**"};
+											,"/hr-user/**"
+											,"/actuator/**"
+											,"/hr-worker/actuator/**"
+											,"/hr-oauth/actuator/**"};
 
 
 
