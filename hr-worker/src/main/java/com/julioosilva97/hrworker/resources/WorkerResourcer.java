@@ -27,8 +27,7 @@ public class WorkerResourcer {
 	@Autowired
 	private Environment env;
 	
-	@Value("${test.config}")
-	private String testConfig;
+	
 	
 	@Autowired
 	private WorkerRepository repository;
@@ -36,8 +35,9 @@ public class WorkerResourcer {
 	@GetMapping("/configs")
 	public ResponseEntity<String> configs(){
 		
-	
-		return ResponseEntity.ok(testConfig);
+
+		return null;
+		//return ResponseEntity.ok(testConfig);
 	}
 	
 	@GetMapping
